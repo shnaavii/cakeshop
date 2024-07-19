@@ -1,0 +1,360 @@
+<html>
+	<head> 
+			<title>cake shop</title>
+			<link rel="stylesheet" href="cakeshop.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css" integrity="sha512-GL7EM8Lf8kU23I3kTio2kRWt8YRDVIQcSZjRVtVRfk05kB/QvkyafuTC94Ev0X6qk7Z0r5s06c1lsP1p/ezDYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=WindSong&display=swap" rel="stylesheet">
+		
+	</head>
+	<body>
+		<header class="navbar">
+			<ul class="menu">
+				<li class="list">HOME<hr class="linee"></li>
+				<li class="list">
+					PAGES
+					<hr class="linee">
+					<div class="dropdown">
+						<ul>
+							<li>About us</li>
+							<li>Who We Are</li>
+							<li>Our Chef</li>
+							<li>Our History</li>
+							<li>Our Menu</li>
+							<li>Pricing Plans</li>
+							<li>Contact Us</li>
+							<li>Get In Touch</li>
+						</ul>
+					</div>
+				</li>
+				<li class="list">
+					SHOP 
+					<hr class="linee">
+					<div class="dropdown">
+						<ul>
+							<li>Right Sidebar</li>
+							<li>Left Sidebar</li>
+							<li>With Filter</li>
+							<li>Uneven</li>
+							<li>Minimal</li>
+							<li class="drop1">
+								Shop Single   
+								<i class="ri-arrow-right-s-line"></i> 
+								<ul class="drop">
+									<li>Custom Single</li>
+									<li>Standard Single</li>
+								</ul>
+							</li>
+							<li class="drop1">
+								Shop Layouts 
+								<i class="ri-arrow-right-s-line"></i> 
+								<ul class="drop2">
+									<li>Two Columns</li>
+									<li>Three Columns</li>
+									<li>Four Columns</li>
+									<li>Five Columns</li>
+									<li>Six Columns</li>
+								</ul>
+							</li>
+							<li class="drop1">
+								Shop Pages
+								<i class="ri-arrow-right-s-line"></i> 
+								<ul class="drop2">
+									<li>My Account</li>
+									<li>Wishlists</li>
+									<li>Cart</li>
+									<li>Checkout</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="list">
+					PORTFOLIO 
+					<hr class="linee">
+					<div class="dropdown1">
+						<ul>
+							<li>Standard List</li>
+							<li>Gallery List</li>
+							<li>Masonary List</li>
+							<li>Fullscreen Slider</li>
+							
+						</ul>
+					</div>
+				</li>
+				<li class="list">
+					<a href="#">BLOG </a>
+					<hr class="linee">
+				</li>
+			</ul>
+			<div class="logo">
+				<img src="logo.jpeg" height="100%" width="100%"> 
+			</div>
+			<div class="login-bar">
+				<a class="online">ONLINE ORDER <hr></a>
+				<div class="login">
+					<p>LOGIN</p>
+					<i class="ri-user-fill  user"></i>
+				</div>
+				<div class="login">
+					<p>CART</p>
+					<i class="zero"> 0</i>
+				</div>
+				<i class="ri-menu-2-line menuu"></i>
+			</div>
+		</header>	
+		<div class="slides" >
+			<div class="slide-container">
+				<div class="slider fade" id="slider" >
+					<img name="slider"  src="" class="slide-img"> 
+				</div>
+			</div>
+			<script>
+			var i = 0;
+			var images = ['slide1.jpg','slide2.jpg','slide3.jpg','slide4.jpg','slide5.jpg'];
+			var time = 2000;
+			function changeImg() {
+				document.getElementsByName('slider')[0].src = images[i];
+			
+				if(i < images.length - 1) {
+					i++;
+				} else {
+					i = 0;
+				}
+				setTimeout("changeImg()", time);
+			}
+			window.onload = changeImg;
+			</script>
+			
+		</div>
+		<div class=" inline-div">
+			<div class="box column" >
+				<figure class="image">
+					<img src="box1.jpg">
+					<figcaption>
+						<h2>Ice Cream</h2>
+						<p>Specialties with 100% cocoa</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="box ">
+				<figure class="image">
+					<img src="box2.jpg">
+					<figcaption>
+						<h2>Choco Nuts</h2>
+						<p>Specialties with 100% cocoa</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="box ">
+				<figure class="image">
+					<img src="box3.jpg">
+					<figcaption>
+						<h2>Choco Fruits</h2>
+						<p>Specialties with 100% cocoa</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="box">
+				<figure class="image">
+					<img src="box4.jpg">
+					<figcaption>
+						<h2>Gift Boxes</h2>
+						<p>Specialties with 100% cocoa</p>
+					</figcaption>
+				</figure>
+			</div>
+		
+		</div>
+		<center>
+			<div class="caption">
+				<p class="choco">CHOCO LOVE</p>
+				
+				<h2>BAKED INTO A <br> TRUE PERFECTION</h2>
+				<span class="Delight">Delight</span>
+			</div>
+		</center>
+		<div class="catogary">
+			<div class="c1">
+				<section class="image1">
+					<div class="like-add">
+						<div class="plus">
+							<p> + </p>
+						</div>
+						<div class="likee">
+							<i class="ri-heart-line"></i>
+						</div>
+					</div>
+					<img src="c1.jpg" width="100%" >
+				</section>
+				<p class="product">Petits fours</p>
+				<pre class="product-det">Caramel   , Confiseurs</pre>
+				<p class="price">$24.00</p>
+			</div>
+			<div class="c1">
+				<section class="image1">
+					<div class="like-add">
+						<div class="plus">
+							<p> + </p>
+						</div>
+						<div class="likee">
+							<i class="ri-heart-line"></i>
+						</div>
+					</div>
+					<img src="c2.jpg" width="100%">
+				</section>
+				<p class="product">Blueberry cake</p>
+				<pre class="product-det">Caramel   , popular</pre>
+				<p class="price">$46.00</p>
+			</div>
+			<div class="c1">
+				<section class="image1">
+					<div class="like-add">
+						<div class="plus">
+							<p> + </p>
+						</div>
+						<div class="likee">
+							<i class="ri-heart-line"></i>
+						</div>
+					</div>
+					<img src="c3.jpg" width="100%">
+				</section>
+				<p class="product">Hazelnut de Luxe</p>
+				<pre class="product-det">Confiseurs , Fudge</pre>
+				<p class="price">$28.00</p>
+			</div>
+			<div class="c1">
+				<section class="image1">
+					<div class="like-add">
+						<div class="plus">
+							<p> + </p>
+						</div>
+						<div class="likee">
+							<i class="ri-heart-line"></i>
+						</div>
+					</div>
+					<img src="c4.jpg" width="100%">
+				</section>
+				<p class="product">Pistachio</p>
+				<pre class="product-det">Caramel   , popular</pre>
+				<p class="price">$19.00</p>
+			</div>
+			<div class="c1">
+				<section class="image1">
+					<div class="like-add">
+						<div class="plus">
+							<p> + </p>
+						</div>
+						<div class="likee">
+							<i class="ri-heart-line"></i>
+						</div>
+					</div>
+					<img src="c5.jpg" width="100%">
+				</section>
+				<p class="product">Caramel Balls</p>
+				<pre class="product-det">Caramel   , Confiseurs</pre>
+				<p class="price">$54.00</p>
+			</div>
+			<div class="c1">
+				<section class="image1">
+					<div class="like-add">
+						<div class="plus">
+							<p> + </p>
+						</div>
+						<div class="likee">
+							<i class="ri-heart-line"></i>
+						</div>
+					</div>
+					<img src="c6.jpg" width="100%">
+				</section>
+				<p class="product">Choco Nuts</p>
+				<pre class="product-det">Confiseurs  , Fudge</pre>
+				<p class="price">$26.00</p>
+			</div>
+			<div class="c1">
+				<section class="image1">
+					<div class="like-add">
+						<div class="plus">
+							<p> + </p>
+						</div>
+						<div class="likee">
+							<i class="ri-heart-line"></i>
+						</div>
+					</div>
+					<img src="c7.jpg" width="100%">
+				</section>
+				<p class="product">Choco Orange</p>
+				<pre class="product-det">Fudge   , popular</pre>
+				<p class="price">$25.00</p>
+			</div>
+			<div class="c1">
+				<section class="image1">
+					<div class="like-add">
+						<div class="plus">
+							<p> + </p>
+						</div>
+						<div class="likee">
+							<i class="ri-heart-line"></i>
+						</div>
+					</div>
+					<img src="c8.jpg" width="100%">
+				</section>
+				<p class="product">Green Candy</p>
+				<pre class="product-det">Fudge   , popular</pre>
+				<p class="price">$46.00</p>
+			</div>
+		</div>
+		<div class="bg">
+			<pre class="hc">Hot Choclate</pre>
+			<p class="big">THE SPECIAL TASTE</p>
+			<button class="read">Read more  <i class="ri-arrow-right-line"></i> </button>
+		</div>
+		<div class="service">
+			<a><i class="ri-men-line"></i>Customer Service</a>
+			<a><i class="ri-price-tag-3-line"></i>Buy Choclate Online</a>
+			<a><i class="ri-map-pin-line"></i>Find Us</a>
+		</div>
+		<footer>
+			<div class="logo-2">
+				<img src="logo.jpeg" height="100%" width="100%">
+			</div>
+			<ul class="useful">
+				<p>Useful Links</p>
+				<li>About us</li>
+				<li>History</li>
+				<li>Our Locations</li>
+				<li>Today's Menu</li>
+				<li>Blog</li>
+				<li>Shop</li>
+			</ul>
+			<ul class="useful">
+				<p>Favourite</p>
+				<li>Orange Pralines</li>
+				<li>Amaretti Oreo</li>
+				<li>Choco Mousse</li>
+				<li>Chocolate Truffles</li>
+				<li>American Cake</li>
+			</ul>
+			<div class="newsletter">
+				<p>Newsletter</p>
+				<pre>Subscribe to get special offers, free gifts<br> and once-in-a-lifetime deals.</pre>
+				<div  class="inputtt">
+					<input type="email"  placeholder="Enter your Email">
+					<div  class="letter">
+						<img src="email-9-svgrepo-com.svg" height="100%" width="100%">
+					</div>
+				</div>
+				<div class="all-icons">
+					<img src="facebook.svg">
+					<img src="twitter-154.svg">
+					<img src="pintrest.svg">
+					<img src="youtube.svg">
+					<img src="instagram.svg">
+				</div>
+			</div>
+			
+		</footer>
+	</body>
+		
+</html>
